@@ -1,17 +1,19 @@
-MERN Stack HotSheet
+# Getting Started with the MERN Stack
+(Info pulled from [mongodb.com](https://www.mongodb.com/languages/mern-stack-tutorial))
 
-# What you need
+## Prerequisites
 1. Install [Node](https://nodejs.org/en/)
 2. A text editor
 
-# Setup
-## Create a React App 
+## Setup
+### Create a React App 
 
 Create an app starter
 ```
 npx create-react-app <name> 
 ```
 
+### Create the Back-End
 Create a folder for the back end.
 ```
 mkdir server
@@ -56,4 +58,15 @@ app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
 ```
+
+### Starting the Server
+How to start the server:
+```
+cd <name>   // same name declared when app created
+npm start
+```
+Other Options:
+* `npm start`: Starts the development server
+* `npm run build`: Bundles the app into static files for production
+* `npm test`: Starts the test runner
 

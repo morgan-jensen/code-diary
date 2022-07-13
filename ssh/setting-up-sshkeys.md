@@ -50,5 +50,6 @@ Host gitlab.com
 Host github.com
     IdentityFile github_key
 ```
+To make the file usable, use `chmod 600 <your_file>`.
 
 For a full list of client configuration options, check [here](https://www.ssh.com/academy/ssh/config)

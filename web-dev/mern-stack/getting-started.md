@@ -28,14 +28,45 @@ npm init -y
 
 Install dependencies.
 ```
-npm install mongodb express cors dotenv
+npm install express cors dotenv
 ```
-- `mongodb`: MongoDB database driver that allows Node.js applications to connect to the database and work with data.
 - `express`: Web framework for Node.js 
 - `cors`: Node.js package that will allow cross-origin resource sharing
 - `dotenv`: Loads environment variables from a .env file into process.env. This seperates configuration files from the code.
 
-Create server.js file with:
+
+Which database solution?
+```
+npm install mongodb 
+```
+or 
+```
+npm install mysql
+```
+
+- `mongodb`: MongoDB database driver that allows Node.js applications to connect to the database and work with data.
+- `mysql`: MySQL database driver that allows Node.js applications to connect to the database and work with data.
+
+_MySQL vs MongoDB_
+While MongoDB is the traditional __M__ in __MERN__, MySQL is another option.
+
+When to use MySQL vs MongoDB:<br>
+__MongoDB__:<br>
+MongoDB is a NoSQL solution, meaning it is non-relational. It is more flexible than a SQL 
+database, because the data doesn't have to conform to rows and columns. For more info,
+check out the MongoDB [documentation](https://www.mongodb.com/docs/). 
+
+__MySQL__:<br>
+MySQL is a SQL-based solution. Being a SQL-based solution means that it conforms to a 
+standard table format of rows, columns and tables. It is less flexible than a NoSQL 
+solution like MongoDB, but will enforce more rigidity in your data. You can find
+their documentation [here](https://www.mysql.com/doc/).
+
+Which one you should use is dependent on what you want to do.
+
+Create server.js file with ->
+
+For a MongoDB back-end:
 ```
 const express = require("express");
 const app = express();
@@ -56,6 +87,22 @@ app.listen(port, () => {
         if (err) console.error(err);
     });
     console.log(`Server is running on port: ${port}`);
+});
+```
+
+For a MySQL back-end, include:
+```
+var mysql = require('mysql')
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "yourusername",
+    password: "yourpassword"
+});
+
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("console.log("Connected!");
 });
 ```
 

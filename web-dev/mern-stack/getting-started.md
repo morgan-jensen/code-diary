@@ -28,12 +28,9 @@ npm init -y
 
 Install dependencies.
 ```
-npm install express cors dotenv
+npm install express 
 ```
 - `express`: Web framework for Node.js 
-- `cors`: Node.js package that will allow cross-origin resource sharing
-- `dotenv`: Loads environment variables from a .env file into process.env. This seperates configuration files from the code.
-
 
 Which database solution?
 ```
@@ -70,14 +67,10 @@ For a MongoDB back-end:
 ```
 const express = require("express");
 const app = express();
-const cors = require("cors");
-require("dotenv").config({ path: "./config.env" });
-const port = process.env.PORT || 5000;
 
-app.use(cors());
 app.use(express.json());
-app.use(require("./routes/record"));
 
+app.use(require("./routes/record"));
 // get driver connection
 const dbo = require("./db/conn");
 
@@ -100,6 +93,7 @@ var con = mysql.createConnection({
     password: "yourpassword"
 });
 
+// replace the app.listen() in the previous code with this
 con.connect(function(err) {
     if (err) throw err;
     console.log("console.log("Connected!");

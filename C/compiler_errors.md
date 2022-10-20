@@ -1,7 +1,7 @@
 # Compiler Errors
 Contained in this section are a list of compier errors I have gotten while working with C and how to fix them.
 
-## Relocation truncated to fit R_x86_64_PC32 against symbol
+### Relocation truncated to fit R_x86_64_PC32 against symbol
 This is an ELF relocation type used in ELF for x86\_64. It expresses that the location of the referenced data is computed based on a 
 32-bit offset from the address related to the program counter.
 

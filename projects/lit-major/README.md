@@ -110,5 +110,5 @@ Pros of Vue:
 Cons of Vue:
 * Less likely to be fully usable in industry due to lower adoption rates.
 
-Thoughts:
+Thoughts:  
 I am currently leaning towards Vue due it it being especially made for beginners. It seems to be a good option for small to medium projects, which I would consider mine to be. React seems like it would be more relevant of a skill to learn for my resume, but I am a big proponent of the FOSS community, and it seems like there is a lot of community support for Vue.

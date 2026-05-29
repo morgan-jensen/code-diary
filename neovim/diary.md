@@ -29,3 +29,10 @@ I tried using mini.snippets plugin, but I feel like I like the completion that c
 I tried installing quick-lint-js as a javascript option, but it got messed up quick. I gave up.
 
 I ended the night with installing the lsp for vue so that I can start the app project soon.
+
+**May 29 2026**  
+Started installing servers with Mason. I think I prefer this option to manually finding and configuring each one.
+
+I need to see what I need to do to get them working on needed files.
+
+Also.. clangd didnt install. Idk if its because its already on the system or what?

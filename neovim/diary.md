@@ -36,3 +36,15 @@ Started installing servers with Mason. I think I prefer this option to manually 
 I need to see what I need to do to get them working on needed files.
 
 Also.. clangd didnt install. Idk if its because its already on the system or what?
+
+**July 04 2026**  
+Figured out how to get formatting to run automatically when I save my buffer.
+To get it to work properly in cpp, you need to add a `.clang_format` file in the directory.
+
+Also tried learning all of the lsp keybinds.
+* 'gri' - go to implementation
+* 'grd' - go to definition
+* 'gra' - gives actions on current diagnostic
+* ']d/e/w' - next diagnostic/error/warning
+* '[d/e/w' - previous diagnostic/error/warning
+* '<C-w d>' - show diagnostic message under cursor
